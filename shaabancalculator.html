@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+
+    <h1>Shaaban's Calculator</h1>
+    <form action="">
+
+        <figure>
+            📱 Calculator
+        </figure>
+        <input type="text" name="calc" id="calc" maxlength="4" readonly>
+        <input type="text" name="calc" id="ans" readonly>
+        <div><span id="num" onclick="calc.value=''; ans.value=''">C</span>
+            <span id="num" onclick="calc.value+='1'">1</span>
+            <span id="num" onclick="calc.value+='2'">2</span>
+            <span id="num" onclick="calc.value+='3'">3</span>
+        </div>
+        <div><span id="num" onclick="calc.value+='4'">4</span>
+            <span id="num" onclick="calc.value+='5'">5</span>
+            <span id="num" onclick="calc.value+='6'">6</span>
+            <span id="num" onclick="calc.value+='7'">7</span>
+        </div>
+        <div>
+            <span id="num" onclick="calc.value+='8'">8</span>
+            <span id="num" onclick="calc.value+='9'">9</span>
+            <span id="num" onclick="calc.value+='0'">0</span>
+            <span id="num" onclick="calc.value+='00'">00</span>
+        </div>
+        <div><span id="num" onclick="calc.value+='*'">*</span>
+            <span id="num" onclick="calc.value+='-'">-</span>
+            <span id="num" onclick="calc.value+='/'">/</span>
+            <span id="num" onclick="calc.value+='+'">+</span>
+        </div>
+        <div>
+            <span id="num" onclick="calc.value=calc.value.substring(0,calc.value.length-1)">DEL</span>
+            <span id="num" onclick="calc.value+='('">(</span>
+            <span id="num" onclick="calc.value+=')'">)</span>
+            <span id="num" class="eq" onclick="ans.value=eval(calc.value); calc.value=ans.value">=</span>
+        </div>
+    </form>
+</body>
+
+</html>
